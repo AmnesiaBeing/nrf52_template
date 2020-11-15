@@ -206,16 +206,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "helloworld"
-version = "0.1.0"
-dependencies = [
- "cortex-m-rtic",
- "cortex-m-semihosting",
- "nrf52832-hal",
- "panic-semihosting",
-]
-
-[[package]]
 name = "indexmap"
 version = "1.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -278,6 +268,16 @@ dependencies = [
  "cortex-m",
  "cortex-m-rt",
  "vcell",
+]
+
+[[package]]
+name = "nrf52_template"
+version = "0.1.0"
+dependencies = [
+ "cortex-m-rtic",
+ "cortex-m-semihosting",
+ "nrf52832-hal",
+ "panic-semihosting",
 ]
 
 [[package]]

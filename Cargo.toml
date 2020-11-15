@@ -1,16 +1,26 @@
 [package]
-name = "helloworld"
-version = "0.1.0"
 authors = ["AmnesiaBeing <727184139@qq.com>"]
 edition = "2018"
+name = "nrf52_template"
+version = "0.1.0"
 
 # 依赖项
 [dependencies]
 cortex-m-rtic = "^0.5.3"
-panic-semihosting = "^0.5.1"
 cortex-m-semihosting = "^0.3.3"
+panic-semihosting = "^0.5.1"
 
 [dependencies.nrf52832-hal]
-version = "^0.11.0"
 default-features = false
 features = ["rt", "xxAA-package"]
+version = "^0.11.0"
+
+[[bin]]
+bench = false
+name = "nrf52_template"
+test = false
+
+[profile.release]
+codegen-units = 1   # 优化选项
+debug = true        # 保留生成文件的符号信息，这些符号信息并不会占用FLASH空间
+lto = true          # 优化选项
