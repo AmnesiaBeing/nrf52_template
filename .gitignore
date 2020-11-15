@@ -1,0 +1,8 @@
+/target
+
+# vscode 配置文件
+.vscode/settings.json
+
+# vscode cortex-debug插件生成的临时文件
+.vscode/.cortex-debug.peripherals.state.json
+.vscode/.cortex-debug.registers.state.json

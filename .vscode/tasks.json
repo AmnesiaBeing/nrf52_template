@@ -1,0 +1,42 @@
+{
+	// 悬停以查看现有属性的描述。
+	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?LinkId=733558 
+	// 本文件来自于https://github.com/rust-embedded/cortex-m-quickstart/blob/master/.vscode/tasks.json
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Cargo Build (debug)",
+			"type": "cargo",
+			"subcommand": "build",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+		},
+		{
+			"label": "Cargo Build (release)",
+			"type": "process",
+			"command": "cargo",
+			"args": [
+				"build",
+				"--release"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+		},
+		{
+			"label": "Cargo Clean",
+			"type": "cargo",
+			"subcommand": "clean",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "clean",
+		}
+	]
+}

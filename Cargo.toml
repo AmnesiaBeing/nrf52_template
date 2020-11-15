@@ -1,0 +1,16 @@
+[package]
+name = "helloworld"
+version = "0.1.0"
+authors = ["AmnesiaBeing <727184139@qq.com>"]
+edition = "2018"
+
+# 依赖项
+[dependencies]
+cortex-m-rtic = "^0.5.3"
+panic-semihosting = "^0.5.1"
+cortex-m-semihosting = "^0.3.3"
+
+[dependencies.nrf52832-hal]
+version = "^0.11.0"
+default-features = false
+features = ["rt", "xxAA-package"]

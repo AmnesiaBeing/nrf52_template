@@ -1,0 +1,9 @@
+[target.thumbv7em-none-eabihf]
+runner = 'arm-none-eabi-gdb'
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+]
+
+# 设置默认编译目标
+[build]
+target = "thumbv7em-none-eabihf"
